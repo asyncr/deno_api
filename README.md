@@ -3,7 +3,7 @@
 ## Requisitos
 - __Deno__ 
 ``` 
-CURRENT VERSION
+VERSIÓN ACTUAL
 
 PS C:\Users\Jesus> deno --version
 deno 1.26.2 (release, x86_64-pc-windows-msvc)
@@ -22,18 +22,18 @@ A language server client for Deno.
 
 - __MongDB & MariaDB__
 - Alguna herramienta para probar APIS como:
-     - __RapidAPI__ Puedes instalar la extension en Visual Studio Code
+     - __RapidAPI__ Puedes instalar la extension en Visual Studio Code.
 	 - __[PostMan](https://www.postman.com/)__
-	 - __O algun otro__
+	 - __U otra__
 
 ---
 ## Instalacion del servidor
-Puedes clonar en una carpeta en especifico utilizando PowerShell o Git
+Puedes clonar en una carpeta en especifico utilizando PowerShell o Git.
 ```
-mdkir NOMBRE_DIRECTORIO 
+mkdir NOMBRE_DIRECTORIO 
 git clone https://github.com/asyncr/deno_api NOMBRE_DIRECTORIO 
 ```
-O directamente
+O directamente.
 ```
 git clone https://github.com/asyncr/deno_api
 ```
