@@ -10,6 +10,7 @@ export const connectorMariaDB = new MySQLConnector({
 
 export const connectorMongoDB = new MongoDBConnector({
      //"mongodb://usuario:contraseña@host:puerto"
-  uri: "mongodb://root:mongodb@192.168.0.109:27017",
+  // uri: "mongodb://root:mongodb@192.168.0.109:27017",
+  uri: "mongodb://root:mongodb@192.168.5.28:27017",
   database: "quotes",
 });

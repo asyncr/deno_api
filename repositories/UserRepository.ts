@@ -13,6 +13,8 @@ class UserRepository {
 
     async isLogin(account:string, password:string) { 
         const users =  await UserModel.where("account",account).select().all();
+        console.log(users);
+
         let isAuthenticate=false;
 
         users.forEach((user: any) => {

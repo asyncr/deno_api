@@ -2,12 +2,14 @@
 import { User } from "../interfaces/User.ts";
 import { default as userRepository  } from "../repositories/UserRepository.ts";
 
-import { crypto } from "../dependences.ts";
+// import { crypto } from "../dependences.ts";
+import { cryptoSHA512 } from "../utils/crypto.js";
 
 class UserService {
 
     isLoginUser = async (account: string, password: string)=>{
-        password = crypto.subtle.digest("SHA-512", new TextEncoder().encode(password)).toString();
+        // password = crypto.subtle.digest("SHA-512", new TextEncoder().encode(password)).toString();
+        password = await cryptoSHA512(password);
         return await userRepository.isLogin(account, password);        
     }
     
